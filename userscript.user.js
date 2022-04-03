@@ -1,11 +1,10 @@
 // ==UserScript==
-// @name         Inscryption r/place
+// @name         PlaceTUD Overlay
 // @namespace    http://tampermonkey.net/
-// @version      0.2
-// @description  stoat
-// @author       oralekin (stoatified by Jeck0_0)
+// @version      1.0
+// @description  Overlay for PlaceTUD
+// @author       forked of oralekin (stoatified by Jeck0_0)
 // @match        https://hot-potato.reddit.com/embed*
-// @icon         https://cdn.discordapp.com/attachments/413985144219893760/959922796966854706/Stoat.png
 // @grant        none
 // ==/UserScript==
 if (window.top !== window.self) {
@@ -16,7 +15,7 @@ if (window.top !== window.self) {
                 Date.now = function() { return new Date().getTime(); }
             }
             const i = document.createElement("img");
-            i.src = "https://cdn.discordapp.com/attachments/504400193458798622/960273736332877905/overlay.png";
+            i.src = "https://cdn.discordapp.com/attachments/960311022911123527/960311158785585242/overlay.png";
             i.style = "position: absolute;left: 0;top: 0px;image-rendering: pixelated;width: 2000px;height: 2000px;";
             i.id = "mcss-overlay"
             i.setAttribute("vis",1)
