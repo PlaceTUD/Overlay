@@ -16,7 +16,7 @@ if (window.top !== window.self) {
                 Date.now = function() { return new Date().getTime(); }
             }
             const i = document.createElement("img");
-            i.src = "https://cdn.discordapp.com/attachments/504400193458798622/960271458716762253/overlay.png";
+            i.src = "https://cdn.discordapp.com/attachments/504400193458798622/960273736332877905/overlay.png";
             i.style = "position: absolute;left: 0;top: 0px;image-rendering: pixelated;width: 2000px;height: 2000px;";
             i.id = "mcss-overlay"
             i.setAttribute("vis",1)
